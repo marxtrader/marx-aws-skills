@@ -1,0 +1,104 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "marx sys ops",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "DescribeIntent",
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "AWS_REGION"
+                      }
+                  ],
+                  "samples": [
+                      "ask marx sys ops to describe instances in {region}",
+                      "ask marx sys ops to describe instances in {region}",
+                      "tell marx sys ops to describe instances in {region}",
+                      "tell marx sys ops to describe instances in {region}"
+                  ]
+              },
+              {
+                  "name": "TurnOffIntent",
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "AWS_REGION"
+                      }
+                  ],
+                  "samples": [
+                      "ask marx sys ops to shut down instances in {region}",
+                      "ask marx sys ops to turn off instances in {region}",
+                      "tell marx sys ops to shut down instances in {region}",
+                      "tell marx sys ops to turn off instances in {region}"
+                  ]
+              },
+              {
+                  "name": "TurnOnIntent",
+                  "slots": [
+                      {
+                          "name": "region",
+                          "type": "AWS_REGION"
+                      }
+                  ],
+                  "samples": [
+                      "ask marx sys ops to start the instances in {region}",
+                      "ask marx sys ops to start up the boxes in {region}",
+                      "tell marx sys ops to start up the boxes in {region}",
+                      "tell marx sys ops to start the boxes in {region}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "AWS_REGION",
+                  "values": [
+                      {
+                          "id": "us-west-2",
+                          "name": {
+                              "value": "US-WEST-2",
+                              "synonyms": [
+                                  "Oregon",
+                                  "us north west"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "ap-southeast-1",
+                          "name": {
+                              "value": "AP-SOUTHEAST-1",
+                              "synonyms": [
+                                  "Singapore",
+                                  "asia southeast",
+                                  "asia"
+                              ]
+                          }
+                      },
+                      {
+                          "id": "us-east-1",
+                          "name": {
+                              "value": "US-EAST-1",
+                              "synonyms": [
+                                  "North Virginia",
+                                  "US east"
+                              ]
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

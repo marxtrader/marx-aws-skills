@@ -1,0 +1,85 @@
+{
+  "languageModel": {
+      "invocationName": "marx sysops",
+      "intents": [
+          {
+              "name": "AMAZON.CancelIntent",
+              "slots": [],
+              "samples": []
+          },
+          {
+              "name": "AMAZON.HelpIntent",
+              "slots": [],
+              "samples": []
+          },
+          {
+              "name": "AMAZON.StopIntent",
+              "slots": [],
+              "samples": []
+          },
+          {
+              "name": "TurnOffIntent",
+              "slots": [
+                  {
+                      "name": "region",
+                      "type": "AWS_REGION"
+                  }
+              ],
+              "samples": [
+                  "shut down instances in {region}",
+                  "turn off instances in {region}"
+              ]
+          },
+          {
+              "name": "TurnOnIntent",
+              "slots": [
+                  {
+                      "name": "region",
+                      "type": "AWS_REGION"
+                  }
+              ],
+              "samples": [
+                  "start my instances in {region}",
+                  "Turn on instances in {region}"
+              ]
+          }
+      ],
+      "types": [
+          {
+              "name": "AWS_REGION",
+              "values": [
+                  {
+                      "id": "us-west-2",
+                      "name": {
+                          "value": "US-WEST-2",
+                          "synonyms": [
+                              "Oregon",
+                              "us north west"
+                          ]
+                      }
+                  },
+                  {
+                      "id": "ap-southeast-1",
+                      "name": {
+                          "value": "AP-SOUTHEAST-1",
+                          "synonyms": [
+                              "Singapore",
+                              "asia southeast"
+                          ]
+                      }
+                  },
+                  {
+                      "id": "us-east-1",
+                      "name": {
+                          "value": "US-EAST-1",
+                          "synonyms": [
+                              "North Virginia",
+                              "US east"
+                          ]
+                      }
+                  }
+              ]
+          }
+      ]
+  }
+}
