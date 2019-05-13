@@ -1,10 +1,10 @@
 var constants = Object.freeze({
 
   // App-ID. TODO: Set Your App ID
-  appId : 'amzn1.ask.skill.e6136043-2988-44b8-b99b-883713cbd7b1'
+  appId : 'App ID'
 
   //  DynamoDB Table Name
-  //dynamoDBTableName : 'CryptoPortal',
+  //dynamoDBTableName : 'Table',
 
   // Skill States
   // states : {
